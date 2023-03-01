@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Weather - App</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="search-box">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="text" placeholder="Coloca tu ciudad">
+            <button id="search" class="fa-solid fa-magnifying-glass"></button>
+        </div>
+
+        <div class="not-found">
+            <img src="img/404.png">
+            <p>Oops! Ciudad no válida :/</p>
+        </div>
+
+        <div class="content-box">
+            <img src="">
+            <p class="temperatura"></p>
+            <p class="descripcion"></p>
+        </div>
+
+        <div class="details-box">
+            <div class="humedad">
+                <i class="fa-solid fa-water"></i>
+                <div class="text">
+                    <span></span>
+                    <p>Humedad</p>
+                </div>
+            </div>
+            <div class="viento">
+                <i class="fa-solid fa-wind"></i>
+                <div class="text">
+                    <span></span>
+                    <p>Viento</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/d7a0f9d7de.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(118, 191, 209);
+}
+
+.container{
+    background-color: #fff;
+    width: 400px;
+    height: 105px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 18px;
+    padding: 28px 32px;
+    font-family: 'Roboto' , sans-serif;
+    transition: .6s ease-out;
+}
+
+.search-box{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-box input{
+    width: 80%;
+    font-size: 24px;
+    text-transform: uppercase;
+    padding-left: 32px;
+    color: #202e34;
+}
+.search-box input::placeholder{
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.search-box button{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 22px;
+    transition: .3s ease;
+    color: rgb(45, 160, 122);
+}
+.search-box button:hover{
+    background-color: rgb(45, 160, 122);
+    color: #fff;
+}
+
+.search-box i{
+    position: absolute;
+    font-size: 28px;
+    color: rgb(45, 160, 122);
+}
+
+.content-box{
+    text-align: center;
+    width: 100%;
+}
+
+.content-box img{
+    width: 80%;
+}
+
+.content-box .temperatura{
+    margin: 28px 0 14px 0;
+    color: #202e34;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.content-box .descripcion{
+    font-size: 1.3em;
+    color: #202e34;
+    font-weight: 500;
+}
+
+.details-box{
+    width: 100%;
+    margin-top: 56px;
+    display: flex;
+}
+
+.details-box .humedad , .details-box .viento{
+    width: 50%;
+    display: flex;
+    color: #202e34;
+    font-size: 1.2em;
+}
+
+.details-box .humedad i, .details-box .viento i{
+    font-size: 1.3em;
+    margin-right: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.details-box .humedad{
+    justify-content: flex-start;
+}
+
+.details-box .viento{
+    justify-content: flex-end;
+}
+
+.not-found{
+    width: 100%;
+    text-align: center;
+    scale: 0;
+    opacity: 0;
+    display: none;
+}
+
+.not-found img{
+    width: 80%;
+}
+.not-found p{
+    color: #202e34;
+    font-size: 1.4em;
+    font-weight: 500;
+    margin: 14px 0 14px 0;
+}
+
+.content-box , .details-box{
+    scale: 0;
+    opacity: 0;
+}
+
+.fadeIn{
+    animation: 0.5s fadeIn forwards;
+    animation-delay: .5s;
+}
+
+@keyframes fadeIn{
+    to{
+        scale: 1;
+        opacity: 1;
+    }
+}
