@@ -24,6 +24,8 @@ body{
     padding: 28px 32px;
     font-family: 'Roboto' , sans-serif;
     transition: .6s ease-out;
+    margin: 0 20px;
+    box-shadow:0 3px 10px 1px dimgrey
 }
 
 .search-box{
